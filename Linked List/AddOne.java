@@ -1,5 +1,5 @@
 /* Add 1 to number represented by Linked List.
-TC:O(N) && SC:O(1).
+TC:O(N) && SC:O(1)
 */
 
 import java.util.*;
