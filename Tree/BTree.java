@@ -189,6 +189,22 @@ class BTree{
 		}
 		System.out.print("Minimum Element->"+min+ " Maximum Element->" + max);
 	}
+	public int getHeight(Node root){
+		if(root == null){
+			return 0;
+		}
+
+		int lheight = getHeight(root.left);
+		int rheight = getHeight(root.right);
+
+		if(lheight > rheight){
+			return lheight+1;
+		}
+		else{
+			return rheight+1;
+		}
+		
+	}
 	public static Node root = null;
 	public static void main(String[] args) {
 		BTree b1 = new BTree();
@@ -219,6 +235,7 @@ class BTree{
 		}
 
 		b1.getMinMax(root);
-		//System.out.println(minMax);
+		int height = b1.getHeight(root);
+		System.out.println("Height of the tree: "+height);
 	}
 }
