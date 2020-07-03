@@ -40,7 +40,7 @@ class RightView{
 			int level = q.peek().level;
 			q.remove();
 
-			if(mp.get(level) == null){  //add left node of same level
+			if(mp.get(level) == null){  //add one node of same level(Visible from right)
 				mp.put(level,temp.data);
 			}
 
