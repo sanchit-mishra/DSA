@@ -38,10 +38,7 @@ class BottomView{
 			int levelHd = q.peek().hd;
 			q.remove();
 
-			if(mp.get(levelHd) == null){
-				mp.put(levelHd,temp.data);
-			}
-			else{
+			if(mp.get(levelHd) == null || mp.get(levelHd) != null){
 				mp.put(levelHd,temp.data);
 			}
 
