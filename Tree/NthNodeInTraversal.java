@@ -1,4 +1,4 @@
-/*Java program for nth node in-order traversal.*/
+/* Java program for nth node in-order traversal. */
 
 import java.util.*;
 
