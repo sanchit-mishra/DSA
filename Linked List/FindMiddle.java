@@ -1,4 +1,5 @@
 /*Find middle element of the linked list.*/
+/* TC: O(N) && SC: O(1) */
 
 import java.util.*;
 
