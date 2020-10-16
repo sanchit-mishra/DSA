@@ -32,6 +32,11 @@ class MyStack{
 		return stack[top];
 	}
 
+	void findmiddle(){
+		int middle = stack.length / 2;
+		System.out.println("Middle Elemet is: " + stack[--middle]);
+	}
+
 	void displayStack(){
 		for(int i = top; i > -1; i--){
 			System.out.print(stack[i] + " -> ");
@@ -50,11 +55,12 @@ class MyStack{
 		s.push(6);
 
 		s.displayStack();
-
+		s.findmiddle();
 		s.push(7);
 
 		long popElement = s.pop();
 		System.out.println("Popped Element: " + popElement);
+		s.findmiddle();
 		
 		s.displayStack();
 
